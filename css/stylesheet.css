@@ -1,0 +1,135 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    padding: 30px 0;
+}
+
+.week-list {
+    padding: 30px 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.week-item {
+    margin-bottom: 10px;
+    border: 2px solid #5bc0de;
+    background: #fefefe;
+    border-radius: 5px;
+}
+
+.week-item-date {
+    text-align: center;
+}
+
+.week-item-day {
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.week-item-left {
+    padding: 10px;
+    border-right: 2px solid #5bc0de;
+    min-height: 300px;
+}
+
+.week-item-content {
+    padding: 10px 25px;
+}
+
+.week-item-date {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.week-number-input {
+    max-width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.find-week {
+    float: right;
+}
+
+.screen-item {
+    padding: 15px 0;
+    border: 2px solid #5bc0de;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.screen-item-time {
+    text-align: right;
+}
+
+.screen-item-poster {
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.screen-item-desc {
+    font-style: italic;
+}
+
+.screen-item-title-wrapper,
+.screen-item-infos,
+.screen-item-desc,
+.screen-item-director{
+    margin-bottom: 10px;
+}
+
+.screen-item-title {
+    font-weight:bold;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+.screen-item-rated,
+.screen-item-runtime-min {
+    padding-right: 10px;
+}
+
+.screen-item-infos {
+    font-size: 12px;
+}
+
+.screen-item-time-text {
+    font-weight: bold;
+}
+
+.screen-item-time {
+    margin-bottom: 10px;
+}
+
+.screen-item-actions .btn-success {
+    margin-bottom: 10px;
+}
+
+.screen-item-actions .btn {
+    width: 100%;
+}
+
+.movie-item {
+    width: 46%;
+    float: left;
+    margin: 2%;
+}
+
+.modal-dialog {
+    max-width:800px;
+}
+
+footer {
+    padding: 15px 0;
+    font-size: 12px;
+}

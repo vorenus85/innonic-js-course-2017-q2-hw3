@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Online Cinema Sheet</h1>
+            <h3 class="text-right"><span id="week-text" data-class="weekText"></span>. week</h3>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="nav-wrapper" data-class="weeklistNavWrapper">
+                <button class="btn btn-info prev-week" data-week-nav="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previus Week</button>
+                <button class="btn btn-info next-week" data-week-nav="next">Next Week <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="btn btn-primary current-week" data-week-nav="current">Current Week</button>
+                <div class="find-week">
+                    <input type="text" placeholder="Type" class="form-control week-number-input" data-class="weekNumberInput">
+                    <button class="btn btn-secondary find-week-btn" data-week-nav="find-week">Find week</button>
+                </div>
+
+            </div>
+            <div id="week-list" class="week-list" data-class="weekList">
+                <div class="week-item container" data-daynumber="0" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Monday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="1" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Tuesday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="2" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Wednesday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="3" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Thursday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="4" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Friday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="5" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Saturday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-item container" data-daynumber="6" data-class="weekItem">
+                    <div class="week-item-container row">
+                        <div class="week-item-left col-md-2">
+                            <span class="week-item-date" data-class="weekItemDate"></span>
+                            <span class="week-item-day">Sunday</span>
+                        </div>
+                        <div class="week-item-content col-md-10" data-class="weekItemContent">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-wrapper" data-class="weeklistNavWrapper">
+                <button class="btn btn-info prev-week" data-week-nav="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i> Previus Week</button>
+                <button class="btn btn-info next-week" data-week-nav="next">Next Week <i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="btn btn-primary current-week" data-week-nav="current">Current Week</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center">
+            <smal>
+                © 2017 by Janos Perge
+            </smal>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="choose-movie" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Choose movie for screening</h4>
+                </div>
+                <div class="modal-body" data-class="movieList">
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="AOXNhjTWPN">Rogue One</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="L6fungC7RO">Alien: Covenant</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="ZiCYO8Id7t">Guardians of the Galaxy Vol. 2</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="j6xj1e93Q2">The Hangover</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="fZrQ7OOWoU">Deadpool</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="Aqg8X4CfZ7">Shrek</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="NL76PTdk9i">Minions</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="W5lKiDuUs9">Non c'è due senza quattro</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="sKsmncYm0Z">RED</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="NKGksgrf4D">The Matrix</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="NKGksgz27h">Forrest Gump</button>
+                    <button class="btn btn-secondary movie-item" data-class="movieItem" data-movie-id="pGz4P2vDd4">The Dark Knight</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success" data-class="addToScreen">Done</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+<script src="./js/searchInJson.js"></script>
+<script src="./js/GetWeek.js"></script>
+<script src="./js/MovieStorage.js"></script>
+<script src="./js/JsonHandler.js"></script>
+<script src="./js/WeekStarterDate.js"></script>
+<script src="./js/WeekListHandler.js"></script>
+<script src="./js/ScreeningStorage.js"></script>
+<script src="./js/ScreeningListBuilder.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
